@@ -108,11 +108,11 @@ export default function ImageGallery() {
   return (
     <div className="container">
       <div className="header">
-        <h1>
+        <h2>
           {isSelected.length > 0
             ? `${isSelected.length} Imgaes Selected`
             : "Gallery"}
-        </h1>
+        </h2>
 
         {isSelected.length > 0 ? (
           <button onClick={handleDelete}>Delete Images</button>
@@ -121,11 +121,7 @@ export default function ImageGallery() {
         )}
       </div>
 
-      <SortableList
-        onSortEnd={handleOnSortEnd}
-        draggedItemClassName="dragged"
-        className="gallery"
-      >
+      <SortableList onSortEnd={handleOnSortEnd} className="gallery">
         {gallery.map((image, index) => (
           <SortableItem key={image.id}>
             <div className={`gallery-item gallery-item-${index + 1}`}>

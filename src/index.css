@@ -41,16 +41,13 @@ p {
 }
 
 button {
-  font-weight: 700;
   font-size: 1rem;
   border: none;
-  color: #212121;
+  color: #ff4b2b;
   background: transparent;
-  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-  color: #ff4b2b;
   cursor: pointer;
 }
 
